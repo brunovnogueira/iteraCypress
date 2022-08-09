@@ -1,0 +1,26 @@
+{
+  "name": "iteracypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunovnogueira/iteraCypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunovnogueira/iteraCypress/issues"
+  },
+  "homepage": "https://github.com/brunovnogueira/iteraCypress#readme",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  },
+  "dependencies": {
+    "chance": "^1.1.8"
+  }
+}
