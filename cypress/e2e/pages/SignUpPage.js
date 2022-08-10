@@ -65,4 +65,12 @@ export default class SignUpPage{
   registrationSuccessful(){
     utils.validarText(signUpElements.successfull,"Registration Successful");
   }
+
+  enterSurnameMessage(){
+    utils.validarText(signUpElements.surnameMessage,"Please enter surname");
+  }
+
+  usernameExistsMessage(){
+    utils.validarText(signUpElements.userExists,"Username already exist");
+  }
 }

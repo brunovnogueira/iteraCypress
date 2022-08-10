@@ -19,18 +19,4 @@ export default class HomePage{
   clicarLogin(){
     utils.click(homeElements.btnLogin);
   }
-
-  signUpLogin(){
-    this.abrirNavegador();
-    this.clicarSignUp();
-    signUpPage.preencherFirstName();
-    signUpPage.preencherSurname();
-    signUpPage.preencherEpost();
-    signUpPage.preencherMobile();
-    signUpPage.preencherUsername();
-    signUpPage.preencherPassword();
-    signUpPage.preencherConfirmPassword();
-    signUpPage.clickBtnSubmit();
-    this.clicarLogin();
-  }
 }

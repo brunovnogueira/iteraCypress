@@ -1,9 +1,3 @@
-import HomePage from "../pages/HomePage";
-const homePage = new HomePage;
-
-import SignUpPage from "../pages/SignUpPage";
-const signUpPage = new SignUpPage;
-
 import LoginPage from "../pages/LoginPage";
 const loginPage = new LoginPage;
 
@@ -12,12 +6,27 @@ const dashboardPage = new DashboardPage;
 
 describe('Login com sucesso', () => {
   it('passes', () => {
-    homePage.abrirNavegador();
-    homePage.clicarLogin();
-    signUpPage.preencherUsernameDefault();
-    signUpPage.preencherPasswordDefault();
-    loginPage.clickBtnLogin();
+    loginPage.login();
 
+    //validação
     dashboardPage.validarLogin();
+  })
+})
+
+describe('Login sem senha', () => {
+  it('passes', () => {
+    loginPage.loginSemSenha();
+
+    //validação
+    loginPage.validarCampoSenha();
+  })
+})
+
+describe('Login campo invalido', () => {
+  it('passes', () => {
+    loginPage.loginCampoInvalido();
+
+    //validação
+    loginPage.validarCredenciais();
   })
 })

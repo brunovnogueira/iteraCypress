@@ -9,4 +9,6 @@ export default class SignUpElements{
   confirmPassword = "#ConfirmPassword";
   btnSubmit = "#submit";
   successfull = '.label-success';
+  surnameMessage = '#Surname-error';
+  userExists = 'body > div > form > div > div:nth-child(12) > div > label';
 }
