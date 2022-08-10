@@ -23,6 +23,10 @@ export default class CreateCustomerPage{
     utils.preencherInput(createCustomerElements.name,name);
   }
 
+  preencherNamePadrao(){
+    utils.preencherInput(createCustomerElements.name,name);
+  }
+
   preencherCompany(){
     utils.preencherInput(createCustomerElements.company,company);
   }
@@ -51,6 +55,10 @@ export default class CreateCustomerPage{
     dashboardPage.validarName(name);
   }
 
+  validarNoMatch(){
+    dashboardPage.validarNoMatch();
+  }
+
   create(){
     this.preencherName();
     this.preencherCompany();
@@ -59,6 +67,11 @@ export default class CreateCustomerPage{
     this.preencherPhone();
     this.preencherEmail();
     this.clicarBtnCreate();
+    dashboardPage.preencherSearch(name);
+    dashboardPage.clicarBtnSearch();
+  }
+
+  pesquisarCriado(){
     dashboardPage.preencherSearch(name);
     dashboardPage.clicarBtnSearch();
   }

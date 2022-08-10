@@ -21,7 +21,19 @@ export default class DashboardPage{
     utils.click(dashboardElements.searchBtn);
   }
 
+  clicarBtnEdit(){
+    utils.click(dashboardElements.editBtn);
+  }
+
   validarName(name){
     utils.validarText(dashboardElements.nameTable,name);
+  }
+
+  validarNoMatch(){
+    utils.validarText(dashboardElements.noMatch,'No Match');
+  }
+
+  clicarBtnDelete(){
+    utils.click(dashboardElements.deleteBtn);
   }
 }
